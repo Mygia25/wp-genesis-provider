@@ -1761,7 +1761,10 @@
     .reveal {
       opacity: 1;
     }
-  </style>
+      .nav__logo-text { white-space: nowrap; }
+    @media (max-width: 900px) { .nav__logo { font-size: 0.95rem !important; } .nav__logo-text { font-size: 0.85rem; } }
+    @media (max-width: 520px) { .nav__logo-text { font-size: 0.72rem; letter-spacing: -0.01em; } }
+X
 </head>
 
 <body>
@@ -1771,11 +1774,11 @@
        ======================================== -->
   <nav class="nav" id="main-nav" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="#home" class="nav__logo" aria-label="Genesis Provider Services — Home">
+      <a href="#home" class="nav__logo" aria-label="Genesis Provider Services LLC — Home">
         <div class="nav__logo-icon" aria-hidden="true">
           <i data-lucide="heart-handshake"></i>
         </div>
-        Genesis
+        <span class="nav__logo-text">Genesis Provider Services LLC</span>
       </a>
 
       <ul class="nav__links" role="list">
